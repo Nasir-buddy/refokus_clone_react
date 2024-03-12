@@ -11,12 +11,12 @@ function Work() {
     ]
     return (
         <div className='w-full'>
-            <div className='relative max-w-screen-xl mx-auto text-center'>
-                <h1 className='text-[30vw] leading-none font-medium tracking-tight select-none'>work</h1>
+            <div className='relative max-w-screen-xl mx-auto text-center mt-10'>
+                <h1 className='text-[30vw] leading-none font-medium tracking-wide select-none'>work</h1>
                 <div className='absolute top-0 h-full w-full'>
                     {image.map((item, index) => (
                         item.isActive && (
-                            <img className='absolute w-60 rounded-lg -translate-x-[50%] -translate-y-[50%]'
+                            <img key={index} className='absolute w-60 rounded-lg -translate-x-[50%] -translate-y-[50%]'
                                 src={item.url}
                                 style={{ top: item.top, left: item.left }}
                                 alt="" />
