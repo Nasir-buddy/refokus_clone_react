@@ -26,7 +26,7 @@ function Marquees() {
         ]
     ]
     return (
-        <div>
+        <div className='py-20 mt-32 '>
             {image.map((item, index)=> (
                 <Marquee iamgeUrls={item}/>
             ))}
