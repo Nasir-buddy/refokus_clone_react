@@ -35,26 +35,41 @@ function Products() {
             case: true
         },
     ];
-    
-    const [position , setPosition] = useState();
+
+    const [position, setPosition] = useState(0);
     const mover = (value) => {
         setPosition(value * 23);
     }
     return (
         <div className='relative'>
-            {products.map((item, index)=>(
-                <Product val={item} index={index} mover={mover}/>
+            {products.map((item, index) => (
+                <Product val={item} index={index} mover={mover} />
             ))}
             <div className='absolute w-full h-full top-0 pointer-events-none '>
                 <motion.div
-                initial={{y: position, x: "-50%"}}
-                animate={{y: position + `rem`}}
-                className='window absolute w-[32rem] h-[23rem] bg-white left-[42.5%] overflow-hidden'>
-                    <div className='w-full h-full bg-red-900 '></div>
-                    <div className='w-full h-full bg-pink-200 '></div>
-                    <div className='w-full h-full bg-sky-300 '></div>
-                    <div className='w-full h-full bg-sky-400 '></div>
-                    <div className='w-full h-full bg-sky-500 '></div>
+                    initial={{ y: position, x: "-50%" }}
+                    animate={{ y: position + `rem` }}
+                    className='window absolute w-[32rem] h-[23rem] bg-white left-[42.5%] overflow-hidden'>
+                    <motion.div
+                        animate={{ y: -position + `rem` }}
+                        transition={{ease: [0.76, 0, 0.24, 1], duration: .8}}
+                        className='w-full h-full bg-sky-100 '></motion.div>
+                    <motion.div
+                        animate={{ y: -position + `rem` }}
+                        transition={{ease: [0.76, 0, 0.24, 1], duration: .8}}
+                        className='w-full h-full bg-sky-200 '></motion.div>
+                    <motion.div
+                        animate={{ y: -position + `rem` }}
+                        transition={{ease: [0.76, 0, 0.24, 1], duration: .8}}
+                        className='w-full h-full bg-sky-300 '></motion.div>
+                    <motion.div
+                        animate={{ y: -position + `rem` }}
+                        transition={{ease: [0.76, 0, 0.24, 1], duration: .8}}
+                        className='w-full h-full bg-sky-400 '></motion.div>
+                    <motion.div
+                        animate={{ y: -position + `rem` }}
+                        transition={{ease: [0.76, 0, 0.24, 1], duration: .8}}
+                        className='w-full h-full bg-sky-500 '></motion.div>
                 </motion.div>
             </div>
         </div>
