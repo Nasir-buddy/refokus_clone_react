@@ -26,9 +26,9 @@ function Marquees() {
         ]
     ]
     return (
-        <div className='py-20 mt-32 '>
-            {image.map((item, index)=> (
-                <Marquee iamgeUrls={item}/>
+        <div className='py-20 mt-10 '>
+            {image.map((item, index) => (
+                <Marquee key={index} direction={index == 0 ? 'left' : 'right'} iamgeUrls={item} />
             ))}
         </div>
     )
