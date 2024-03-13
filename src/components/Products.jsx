@@ -52,24 +52,34 @@ function Products() {
                     className='window absolute w-[32rem] h-[23rem] bg-white left-[42.5%] overflow-hidden'>
                     <motion.div
                         animate={{ y: -position + `rem` }}
-                        transition={{ease: [0.76, 0, 0.24, 1], duration: .8}}
-                        className='w-full h-full bg-sky-100 '></motion.div>
+                        transition={{ ease: [0.76, 0, 0.24, 1], duration: .8 }}
+                        className='w-full h-full bg-sky-100 '>
+                        
+                    </motion.div>
                     <motion.div
                         animate={{ y: -position + `rem` }}
-                        transition={{ease: [0.76, 0, 0.24, 1], duration: .8}}
-                        className='w-full h-full bg-sky-200 '></motion.div>
+                        transition={{ ease: [0.76, 0, 0.24, 1], duration: .8 }}
+                        className='w-full h-full bg-sky-200 '>
+                        
+                    </motion.div>
                     <motion.div
                         animate={{ y: -position + `rem` }}
-                        transition={{ease: [0.76, 0, 0.24, 1], duration: .8}}
-                        className='w-full h-full bg-sky-300 '></motion.div>
+                        transition={{ ease: [0.76, 0, 0.24, 1], duration: .8 }}
+                        className='w-full h-full bg-sky-300 '>
+                        
+                    </motion.div>
                     <motion.div
                         animate={{ y: -position + `rem` }}
-                        transition={{ease: [0.76, 0, 0.24, 1], duration: .8}}
-                        className='w-full h-full bg-sky-400 '></motion.div>
+                        transition={{ ease: [0.76, 0, 0.24, 1], duration: .8 }}
+                        className='w-full h-full bg-sky-400 '>
+                        
+                    </motion.div>
                     <motion.div
                         animate={{ y: -position + `rem` }}
-                        transition={{ease: [0.76, 0, 0.24, 1], duration: .8}}
-                        className='w-full h-full bg-sky-500 '></motion.div>
+                        transition={{ ease: [0.76, 0, 0.24, 1], duration: .8 }}
+                        className='w-full h-full bg-sky-500 '>
+                        
+                    </motion.div>
                 </motion.div>
             </div>
         </div>
