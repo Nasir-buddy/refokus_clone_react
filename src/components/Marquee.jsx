@@ -1,15 +1,20 @@
+import { motion } from 'framer-motion'
 import React from 'react'
 
-function Marquee({iamgeUrls}) {
+function Marquee({ iamgeUrls, direction }) {
   return (
-    <div className='w-full flex items-center gap-20 py-7 whitespace-nowrap overflow-hidden'>
-        {iamgeUrls.map((item, index)=>(
-            <img src={item} alt="" />
+    <motion.div className='w-full flex overflow-hidden'>
+      <motion.div initial={{ x: '0' }} animate={{ x: '-100%' }} transition={{ ease: 'linear', duration: 10, repeat: Infinity}} className='flex flex-shrink-0 gap-20 py-10 pr-40'>
+        {iamgeUrls.map((item, index) => (
+          <img src={item} alt="" className='flex-shrink-0 w-[6vw]' />
         ))}
-        {iamgeUrls.map((item, index)=>(
-            <img src={item} alt="" />
+      </motion.div>
+      <motion.div initial={{ x: '0' }} animate={{ x: '-100%' }} transition={{ ease: 'linear', duration: 10, repeat: Infinity}} className='flex flex-shrink-0 gap-20 py-10 pr-40'>
+        {iamgeUrls.map((item, index) => (
+          <img src={item} alt="" className='flex-shrink-0 w-[6vw]' />
         ))}
-    </div>
+      </motion.div>
+    </motion.div>
   )
 }
 
