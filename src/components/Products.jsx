@@ -9,68 +9,69 @@ function Products() {
             description: "With a continuous 3D animation, we showcase Arqitel approach and show how migration data translates into real estate.",
             live: true,
             case: false,
-            video: "/video/Arqitel"
+
         },
         {
             name: "Cula",
             description: "We immersed ourselves in a 3D world we created to explain how Cula's platform collects data from carbon removal processes and converts them into carbon credit certificates.",
             live: true,
-            case: true
+            case: true,
         },
         {
             name: "TTR",
             description: "We've created an interactive site using generative AI to allow users to engage with our thinking about Ai, industry trends and design.",
             live: true,
-            case: true
+            case: true,
         },
         {
             name: "Maniv",
             description: "A global early-stage venture fund partnering with founders to advance cleaner, safer, and more sustainable movement of people and goods.",
             live: true,
-            case: false
+            case: false,
         },
         {
             name: "Yahoo!",
             description: "We enhanced the New York Fashion Week, by creating a fully digital AR fashion experience for Yahoo and Maisie Wilen, featuring holographic 3D models and an integrated web shop.",
             live: true,
-            case: false
+            case: false,
         },
         {
             name: "Rainfall",
             description: "We crafted a website for Rainfall Ventures, developing prototypes and custom code that ultimately allows their team to update content regularly and with ease.",
             live: true,
-            case: true
+            case: true,
         },
         {
             name: "Jungle",
             description: "We crafted a timeless visual system for Jungle Ventures, covering all aspects of web design, and empowered their marketing team to scale organically using Webflow.",
             live: true,
-            case: false
+            case: false,
         },
         {
             name: "Silvr",
             description: "We teamed up with financing solutions provider Silvr to audit, refine and evolve their brand.",
             live: false,
-            case: true
+            case: true,
         },
         {
             name: "weglot",
             description: "Our OMR22 Masterclass teaches how to create a showcase website, and we made a showcase website about showcase websites to promote the art of showcasing.",
             live: true,
-            case: true
+            case: true,
         },
     ];
-
+    
     const [position, setPosition] = useState(0);
     const mover = (value) => {
         setPosition(value * 23);
     }
     return (
         <div className='relative'>
+            
             {products.map((item, index) => (
                 <Product val={item} key={index} index={index} mover={mover} />
             ))}
-            <div className='absolute w-full h-full top-0 pointer-events-none '>
+            <div className='absolute w-full h-full top-0 pointer-events-none'>
                 <motion.div
                     initial={{ y: position, x: "-50%" }}
                     animate={{ y: position + `rem` }}
