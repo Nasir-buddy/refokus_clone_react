@@ -81,7 +81,7 @@ function Products() {
                         transition={{ ease: [0.76, 0, 0.24, 1], duration: .8 }}
                         className='w-full h-full bg-sky-100 '>
                         <video autoPlay loop muted>
-                            <source src="\videos\Arqitel.webm" />
+                            <source src="\videos\Arqitel.mp4" />
                         </video>
                     </motion.div>
                     <motion.div
@@ -89,7 +89,7 @@ function Products() {
                         transition={{ ease: [0.76, 0, 0.24, 1], duration: .8 }}
                         className='w-full h-full bg-sky-200 '>
                         <video autoPlay loop muted>
-                            <source src="\videos\jungle.webm" />
+                            <source src="\videos\jungle.mp4" />
                         </video>
                     </motion.div>
                     <motion.div
@@ -105,7 +105,7 @@ function Products() {
                         transition={{ ease: [0.76, 0, 0.24, 1], duration: .8 }}
                         className='w-full h-full bg-sky-400 '>
                         <video autoPlay loop muted>
-                            <source src="\videos\Silvr.webm" />
+                            <source src="\videos\Candid.mp4" />
                         </video>
                     </motion.div>
                     <motion.div
@@ -113,7 +113,7 @@ function Products() {
                         transition={{ ease: [0.76, 0, 0.24, 1], duration: .8 }}
                         className='w-full h-full bg-sky-500 '>
                         <video autoPlay loop muted>
-                            <source src="\videos\yahoo.webm" />
+                            <source src="\videos\yahoo.mp4" />
                         </video>
                     </motion.div>
                     <motion.div
@@ -121,7 +121,7 @@ function Products() {
                         transition={{ ease: [0.76, 0, 0.24, 1], duration: .8 }}
                         className='w-full h-full bg-sky-500 '>
                         <video autoPlay loop muted>
-                            <source src="\videos\rainfall.webm" />
+                            <source src="\videos\rainfall.mp4" />
                         </video>
                     </motion.div>
                     <motion.div
@@ -137,7 +137,7 @@ function Products() {
                         transition={{ ease: [0.76, 0, 0.24, 1], duration: .8 }}
                         className='w-full h-full bg-sky-500 '>
                         <video autoPlay loop muted>
-                            <source src="\videos\Candid.webm" />
+                            <source src="\videos\Candid.mp4" />
                         </video>
                     </motion.div>
                     <motion.div
