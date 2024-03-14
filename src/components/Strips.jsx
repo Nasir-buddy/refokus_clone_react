@@ -13,7 +13,7 @@ function Strips() {
   return (
     <div className='flex items-center mt-32 mb-20'>
         {data.map((item, index)=>(
-            <Strip val={item}/>
+            <Strip key={index} val={item}/>
         ))}
     </div>
   )

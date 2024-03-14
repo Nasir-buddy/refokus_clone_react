@@ -10,7 +10,7 @@ function Marquee({ iamgeUrls, direction }) {
         transition={{ ease: 'linear', duration: 15, repeat: Infinity }} 
         className='flex flex-shrink-0 gap-20 py-10 pr-40'>
         {iamgeUrls.map((item, index) => (
-          <img src={item} alt="" className='flex-shrink-0 w-[6vw]' />
+          <img key={index} src={item} alt="" className='flex-shrink-0 w-[6vw]' />
         ))}
       </motion.div>
       <motion.div
@@ -19,7 +19,7 @@ function Marquee({ iamgeUrls, direction }) {
         transition={{ ease: 'linear', duration: 15, repeat: Infinity }} 
         className='flex flex-shrink-0 gap-20 py-10 pr-40'>
         {iamgeUrls.map((item, index) => (
-          <img src={item} alt="" className='flex-shrink-0 w-[6vw]' />
+          <img key={index} src={item} alt="" className='flex-shrink-0 w-[6vw]' />
         ))}
       </motion.div>
 

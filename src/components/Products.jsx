@@ -43,7 +43,7 @@ function Products() {
     return (
         <div className='relative'>
             {products.map((item, index) => (
-                <Product val={item} index={index} mover={mover} />
+                <Product val={item} key={index} index={index} mover={mover} />
             ))}
             <div className='absolute w-full h-full top-0 pointer-events-none '>
                 <motion.div
@@ -77,8 +77,7 @@ function Products() {
                     <motion.div
                         animate={{ y: -position + `rem` }}
                         transition={{ ease: [0.76, 0, 0.24, 1], duration: .8 }}
-                        className='w-full h-full bg-sky-500 '>
-                        
+                        className='w-full h-full bg-sky-500 '>  
                     </motion.div>
                 </motion.div>
             </div>
