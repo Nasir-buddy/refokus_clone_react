@@ -30,8 +30,32 @@ function Products() {
             case: false
         },
         {
-            name: "YIR 2022",
-            description: "Our second year was filled with great events, exciting projects, awards and amazing people - so we made another showcase to celebrate.",
+            name: "Yahoo!",
+            description: "We enhanced the New York Fashion Week, by creating a fully digital AR fashion experience for Yahoo and Maisie Wilen, featuring holographic 3D models and an integrated web shop.",
+            live: true,
+            case: false
+        },
+        {
+            name: "Rainfall",
+            description: "We crafted a website for Rainfall Ventures, developing prototypes and custom code that ultimately allows their team to update content regularly and with ease.",
+            live: true,
+            case: true
+        },
+        {
+            name: "Jungle",
+            description: "We crafted a timeless visual system for Jungle Ventures, covering all aspects of web design, and empowered their marketing team to scale organically using Webflow.",
+            live: true,
+            case: false
+        },
+        {
+            name: "Silvr",
+            description: "We teamed up with financing solutions provider Silvr to audit, refine and evolve their brand.",
+            live: false,
+            case: true
+        },
+        {
+            name: "weglot",
+            description: "Our OMR22 Masterclass teaches how to create a showcase website, and we made a showcase website about showcase websites to promote the art of showcasing.",
             live: true,
             case: true
         },
@@ -50,7 +74,7 @@ function Products() {
                 <motion.div
                     initial={{ y: position, x: "-50%" }}
                     animate={{ y: position + `rem` }}
-                    className='window absolute w-[32rem] h-[23rem] bg-white left-[42.5%] overflow-hidden'>
+                    className='window absolute w-[32rem] h-[23rem] left-[42.5%] rounded-[1.5rem] overflow-hidden '>
                     <motion.div
                         animate={{ y: -position + `rem` }}
                         transition={{ ease: [0.76, 0, 0.24, 1], duration: .8 }}
@@ -89,6 +113,38 @@ function Products() {
                         className='w-full h-full bg-sky-500 '>
                         <video autoPlay loop muted>
                             <source src="\videos\yahoo.webm" />
+                        </video>
+                    </motion.div>
+                    <motion.div
+                        animate={{ y: -position + `rem` }}
+                        transition={{ ease: [0.76, 0, 0.24, 1], duration: .8 }}
+                        className='w-full h-full bg-sky-500 '>
+                        <video autoPlay loop muted>
+                            <source src="\videos\rainfall.webm" />
+                        </video>
+                    </motion.div>
+                    <motion.div
+                        animate={{ y: -position + `rem` }}
+                        transition={{ ease: [0.76, 0, 0.24, 1], duration: .8 }}
+                        className='w-full h-full bg-sky-500 '>
+                        <video autoPlay loop muted>
+                            <source src="\videos\Cula_promo_new_4_3.mp4" />
+                        </video>
+                    </motion.div>
+                    <motion.div
+                        animate={{ y: -position + `rem` }}
+                        transition={{ ease: [0.76, 0, 0.24, 1], duration: .8 }}
+                        className='w-full h-full bg-sky-500 '>
+                        <video autoPlay loop muted>
+                            <source src="\videos\Candid.webm" />
+                        </video>
+                    </motion.div>
+                    <motion.div
+                        animate={{ y: -position + `rem` }}
+                        transition={{ ease: [0.76, 0, 0.24, 1], duration: .8 }}
+                        className='w-full h-full bg-sky-500 '>
+                        <video autoPlay loop muted>
+                            <source src="\videos\showcase_4_3.mp4" />
                         </video>
                     </motion.div>
                 </motion.div>
