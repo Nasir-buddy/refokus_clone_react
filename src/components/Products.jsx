@@ -8,7 +8,8 @@ function Products() {
             name: "Arqitel",
             description: "With a continuous 3D animation, we showcase Arqitel approach and show how migration data translates into real estate.",
             live: true,
-            case: false
+            case: false,
+            video: "/video/Arqitel"
         },
         {
             name: "Cula",
@@ -54,30 +55,41 @@ function Products() {
                         animate={{ y: -position + `rem` }}
                         transition={{ ease: [0.76, 0, 0.24, 1], duration: .8 }}
                         className='w-full h-full bg-sky-100 '>
-                        
+                        <video autoPlay loop muted>
+                            <source src="\videos\Arqitel.webm" />
+                        </video>
                     </motion.div>
                     <motion.div
                         animate={{ y: -position + `rem` }}
                         transition={{ ease: [0.76, 0, 0.24, 1], duration: .8 }}
                         className='w-full h-full bg-sky-200 '>
-                        
+                        <video autoPlay loop muted>
+                            <source src="\videos\jungle.webm" />
+                        </video>
                     </motion.div>
                     <motion.div
                         animate={{ y: -position + `rem` }}
                         transition={{ ease: [0.76, 0, 0.24, 1], duration: .8 }}
                         className='w-full h-full bg-sky-300 '>
-                        
+                        <video autoPlay loop muted>
+                            <source src="\videos\webflow-education-promo.mp4" />
+                        </video>
                     </motion.div>
                     <motion.div
                         animate={{ y: -position + `rem` }}
                         transition={{ ease: [0.76, 0, 0.24, 1], duration: .8 }}
                         className='w-full h-full bg-sky-400 '>
-                        
+                        <video autoPlay loop muted>
+                            <source src="\videos\Silvr.webm" />
+                        </video>
                     </motion.div>
                     <motion.div
                         animate={{ y: -position + `rem` }}
                         transition={{ ease: [0.76, 0, 0.24, 1], duration: .8 }}
-                        className='w-full h-full bg-sky-500 '>  
+                        className='w-full h-full bg-sky-500 '>
+                        <video autoPlay loop muted>
+                            <source src="\videos\yahoo.webm" />
+                        </video>
                     </motion.div>
                 </motion.div>
             </div>
