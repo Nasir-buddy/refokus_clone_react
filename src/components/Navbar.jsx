@@ -1,5 +1,6 @@
 import React from 'react'
 import Button from './Button'
+import Button2 from './Button2'
 
 const Navbar = () => {
     return (
@@ -19,7 +20,7 @@ const Navbar = () => {
                     })}
                 </div>
             </div>
-            <Button />
+            <Button2 change={true} />
         </div>
     )
 }

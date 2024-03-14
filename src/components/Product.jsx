@@ -1,5 +1,6 @@
 import React from 'react'
 import Button from './Button'
+import Button2 from './Button2'
 
 function Product({val, mover, index}) {
   return (
@@ -10,7 +11,7 @@ function Product({val, mover, index}) {
                 <p className='mb-10 text-[1.1rem]'>{val.description}</p>
                 <div className='flex items-center gap-10'>
                 {val.live && <Button />}
-                {val.case && <Button title={'case study'}/>}
+                {val.case && <Button title='case study'/>}
                 </div>
             </div>
         </div>
