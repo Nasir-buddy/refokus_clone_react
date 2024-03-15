@@ -10,7 +10,7 @@ import LocomotiveScroll from 'locomotive-scroll';
 function App() {
   const locomotiveScroll = new LocomotiveScroll();
   return (
-    <div className='bg-zinc-900 w-100% text-white font-["satoshi"] '>
+    <div className='bg-zinc-900 w-100% text-white font-semibold '>
         <Navbar />
         <Work />
         <Strips />
