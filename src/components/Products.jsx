@@ -137,7 +137,7 @@ function Products() {
                         transition={{ ease: [0.76, 0, 0.24, 1], duration: .8 }}
                         className='w-full h-full bg-sky-500 '>
                         <video autoPlay loop muted>
-                            <source src="\videos\Candid.mp4" />
+                            <source src="\videos\rainfall.mp4" />
                         </video>
                     </motion.div>
                     <motion.div
